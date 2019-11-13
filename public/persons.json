@@ -1,0 +1,19 @@
+[{
+        "id": 1,
+        "nom": "Dupont",
+        "prenom": "Albert",
+        "photo": "albert.png"
+    },
+    {
+        "id": 2,
+        "nom": "Doe",
+        "prenom": "John",
+        "photo": "john.png"
+    },
+    {
+        "id": 3,
+        "nom": "Ravel",
+        "prenom": "Maurice",
+        "photo": "maurice.png"
+    }
+]
