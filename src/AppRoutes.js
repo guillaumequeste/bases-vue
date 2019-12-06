@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import 'bootstrap'
 import 'jquery'
 import 'popper.js'
+import VuePageTransition from 'vue-page-transition'
 import Accueil from './components/Accueil'
 import Liste from './components/Liste'
 import Contact from './components/Contact.vue'
@@ -13,6 +14,7 @@ import User from './components/User.vue'
 import 'bootstrap/dist/css/bootstrap.css'
 
 Vue.use(VueRouter)
+Vue.use(VuePageTransition)
 
 let router = new VueRouter({
     mode: 'history',
@@ -29,7 +31,9 @@ let router = new VueRouter({
         {
             path: '/contact',
             component: Contact,
-            name: 'contact'
+            name: 'contact',
+            // overwrite default transition
+            meta: { transition: 'zoom' }
         },
         {
             path: '/api',
