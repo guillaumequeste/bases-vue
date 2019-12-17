@@ -26,3 +26,5 @@ Page transitions :
         name: 'contact',
         // overwrite default transition
         meta: { transition: 'zoom' }
+
+yarn build
