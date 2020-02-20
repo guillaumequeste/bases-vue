@@ -28,3 +28,11 @@ Page transitions :
         meta: { transition: 'zoom' }
 
 yarn build
+
+Mettre le fichier '.htaccess' à la racine, en production :
+    RewriteEngine On
+        RewriteBase /
+        RewriteRule ^index.html$ - [L]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . /index.html [L]
